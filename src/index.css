@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body {
+    background-color: #FAFAFA;
+    color: #18181b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* 20-Second Organic Floating Pastel Orbs */
+@keyframes fluid-pastel-1 {
+  0% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(100px, 60px) scale(1.15) rotate(30deg);
+  }
+  66% {
+    transform: translate(-80px, 100px) scale(0.9) rotate(60deg);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+}
+
+@keyframes fluid-pastel-2 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-120px, -70px) scale(1.18);
+  }
+  66% {
+    transform: translate(80px, -50px) scale(0.85);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes fluid-pastel-3 {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(120px, -80px) scale(1.2);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+/* Alabaster Glass Core Utilities */
+.alabaster-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(24px) saturate(1.4);
+  -webkit-backdrop-filter: blur(24px) saturate(1.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 1px solid rgba(0, 0, 0, 0.04);
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.alabaster-glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.alabaster-glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(36px) saturate(1.5);
+  -webkit-backdrop-filter: blur(36px) saturate(1.5);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: -16px 0 48px rgba(0, 0, 0, 0.06), inset 1px 0 2px rgba(255, 255, 255, 0.9);
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-wireframe {
+  animation: spin-slow 24s linear infinite;
+}
+
+.spin-paused {
+  animation-play-state: paused !important;
+}
+
+/* 3D Perspective Container */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Custom alabaster selection */
+::selection {
+  background-color: #18181b;
+  color: #ffffff;
+}

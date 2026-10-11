@@ -1,0 +1,6 @@
+{
+  "name": "Sonora Music Analysis",
+  "description": "Spotify-inspired AI musicology explorer with iTunes search and Gemini-powered song and album deep dives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
